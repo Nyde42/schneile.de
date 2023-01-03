@@ -1,0 +1,18 @@
+Redirect "/legal"       "http://uemedia.de/legal-notice/"
+Redirect "/bokblin"     "https://www.youtube.com/@DummerBokblin"
+Redirect "/vod"         "https://www.youtube.com/@SchneileVOD"
+Redirect "/youtube"     "https://www.youtube.com/@Schneile"
+Redirect "/twitch"      "https://www.twitch.tv/SchneileTV"
+Redirect "/discord"     "https://discord.gg/GYeAZAUytq"
+Redirect "/twitter"     "https://twitter.com/Schneile_"
+Redirect "/instagram"   "https://www.instagram.com/schneile_/"
+Redirect "/playlist"    "https://open.spotify.com/playlist/0C96nfVDurCWJbTKahdPhP?si=73c3bc4d6e934903"
+Redirect "/leaderboard" "https://www.youtube.com/watch?v=wpV-gGA4PSk"
+
+php_flag display_errors 1
+
+RedirectMatch "^/(test|podcast|religion)(?:/|\?|$)" "/?p=$1"
+
+RedirectMatch 404 "^/(?!(?:(?:index)\.php)?$|(?:files|css)/.+)"
+
+ErrorDocument 404 "/error/404.php"

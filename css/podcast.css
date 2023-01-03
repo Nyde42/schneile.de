@@ -1,0 +1,11 @@
+table#linktree {
+	vertical-align: middle;
+	line-height: .9em;
+}
+
+table#linktree tr td {
+	padding: 4px;
+}
+table#linktree tr td img {
+	border-radius: 8px;
+}
