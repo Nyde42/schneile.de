@@ -1,0 +1,54 @@
+html {
+  margin-left: 32px;
+  padding-bottom: 64px;
+  background-color: #181818;
+  color: #FFFFFF;
+  font: 1em/1.5em Arial, Helvetica, sans-serif;
+}
+
+html, table, tr, td {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+h1 {
+  font-size: 3.5em;
+  text-shadow: 0 -0.04em 0.032em #FFFF00, 0 0.04em 0.032em #FF0000, -0.04em 0 0.032em #00FF00, 0.04em 0 0.032em #0000FF, -0.028em -0.028em 0.032em #7FFF00, -0.028em 0.028em 0.032em #AAAA00, 0.028em -0.028em 0.032em #7F7F7F, 0.028em 0.028em 0.032em #AA00AA;
+}
+
+h2 {
+  font-size: 2.5em;
+  text-shadow: 0 -0.04em 0.032em #FFFF00, 0 0.04em 0.032em #FF0000, -0.04em 0 0.032em #00FF00, 0.04em 0 0.032em #0000FF, -0.028em -0.028em 0.032em #7FFF00, -0.028em 0.028em 0.032em #AAAA00, 0.028em -0.028em 0.032em #7F7F7F, 0.028em 0.028em 0.032em #AA00AA;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.3em;
+}
+
+h6 {
+  font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.25em;
+}
+
+strong {
+  font-variant: small-caps;
+}
+
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=_.css.map */

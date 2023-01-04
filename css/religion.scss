@@ -1,0 +1,15 @@
+@mixin glow($color) {
+	font-variant: small-caps;
+	color: $color;
+	text-shadow:
+		0 0 .1em $color,
+		0 0 .2em $color,
+		0 0 .3em $color;
+}
+
+.holy {
+	@include glow(#FFFFFF);
+}
+.evil {
+	@include glow(#FF0000)
+}

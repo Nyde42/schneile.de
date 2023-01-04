@@ -1,0 +1,60 @@
+@use 'sass:list';
+@use 'sass:math';
+
+html {
+	margin-left: 32px;
+	padding-bottom: 64px;
+	background-color: #181818;
+	color: #FFFFFF;
+	font: 1em/1.5em Arial, Helvetica, sans-serif;
+}
+
+html, table, tr, td {
+	text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+}
+
+@for $h from 1 through 6 {
+	h#{$h} {
+		font-size: list.nth([3.5, 2.5, 2, 1.6, 1.3, 1.1], $h) + em;
+
+		@if $h<3 {
+			$f: 4em; // Use this to tweak
+			$of1p: $f * .010;
+			$of2p: $f * .007;
+			$blur: $f * .008;
+			$of1n: -$of1p;
+			$of2n: -$of2p;
+			$zero: 0;
+			text-shadow:
+				$zero $of1n $blur #FFFF00,
+				$zero $of1p $blur #FF0000,
+				$of1n $zero $blur #00FF00,
+				$of1p $zero $blur #0000FF,
+				$of2n $of2n $blur #7FFF00,
+				$of2n $of2p $blur #AAAA00,
+				$of2p $of2n $blur #7F7F7F,
+				$of2p $of2p $blur #AA00AA;
+		}
+	}
+}
+
+$headings: h1, h2, h3, h4, h5, h6;
+
+#{$headings} {
+	margin-top: 1em;
+	margin-bottom: .5em;
+	line-height: 1.25em;
+}
+
+strong {
+	font-variant: small-caps;
+}
+
+$strongs: ();
+@each $h in $headings {
+	$strongs: list.append($strongs, $h strong + ',');
+}
+#{$strongs} {
+	font-weight: bold;
+}

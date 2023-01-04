@@ -1,0 +1,13 @@
+.holy {
+  font-variant: small-caps;
+  color: #FFFFFF;
+  text-shadow: 0 0 0.1em #FFFFFF, 0 0 0.2em #FFFFFF, 0 0 0.3em #FFFFFF;
+}
+
+.evil {
+  font-variant: small-caps;
+  color: #FF0000;
+  text-shadow: 0 0 0.1em #FF0000, 0 0 0.2em #FF0000, 0 0 0.3em #FF0000;
+}
+
+/*# sourceMappingURL=religion.css.map */
